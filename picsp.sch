@@ -6,45 +6,20 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiCSP"
-Date "2018-02-27"
-Rev "A"
+Date "2018-04-25"
+Rev "B"
 Comp "fauxpark"
 Comment1 ""
 Comment2 ""
 Comment3 "For avrdude's linuxgpio programmer"
 Comment4 "Raspberry Pi ICSP adapter"
 $EndDescr
-NoConn ~ 7350 3050
-Text GLabel 7300 2950 0    60   Input ~ 0
-MOSI
 Wire Wire Line
-	7300 2950 7350 2950
-Text GLabel 7300 3150 0    60   Input ~ 0
-RST
-Text GLabel 7300 3250 0    60   Input ~ 0
-SCK
-Text GLabel 7300 3350 0    60   Input ~ 0
-MISO
+	3900 3250 3950 3250
 Wire Wire Line
-	7300 3350 7350 3350
+	3900 3950 3950 3950
 Wire Wire Line
-	7300 3250 7350 3250
-Wire Wire Line
-	7300 3150 7350 3150
-Text GLabel 5700 4050 2    60   Input ~ 0
-RST
-Text GLabel 3800 3650 0    60   Input ~ 0
-MOSI
-Text GLabel 3800 3750 0    60   Input ~ 0
-SCK
-Text GLabel 3800 3150 0    60   Input ~ 0
-MISO
-Wire Wire Line
-	3800 3150 3850 3150
-Wire Wire Line
-	3800 3650 3850 3650
-Wire Wire Line
-	5700 4050 5650 4050
+	5600 4350 5550 4350
 $Comp
 L power:VCC #PWR01
 U 1 1 59C8E066
@@ -67,106 +42,56 @@ F 3 "" H 5050 5050 50  0001 C CNN
 	1    5050 5050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5650 4450
-NoConn ~ 5650 4350
-NoConn ~ 5650 4150
-NoConn ~ 5650 3850
-NoConn ~ 5650 3750
-NoConn ~ 5650 3650
-NoConn ~ 3850 4450
-NoConn ~ 3850 4350
-NoConn ~ 3850 4050
-NoConn ~ 3850 3950
-NoConn ~ 3850 3850
-NoConn ~ 3850 3550
-NoConn ~ 3850 3450
-NoConn ~ 3850 3350
-NoConn ~ 3850 3250
-NoConn ~ 3850 3050
-NoConn ~ 3850 2950
+NoConn ~ 5550 4450
+NoConn ~ 3950 4350
+NoConn ~ 5550 4150
+NoConn ~ 5550 4050
+NoConn ~ 5550 3950
+NoConn ~ 5550 3850
+NoConn ~ 5550 2850
+NoConn ~ 5550 2750
+NoConn ~ 3950 4250
+NoConn ~ 3950 4150
+NoConn ~ 3950 3850
+NoConn ~ 3950 3650
+NoConn ~ 3950 3550
+NoConn ~ 3950 3450
+NoConn ~ 3950 3150
+NoConn ~ 3950 3050
+NoConn ~ 3950 2850
 NoConn ~ 4850 2350
 NoConn ~ 4950 2350
-NoConn ~ 5650 2750
-NoConn ~ 5650 2850
-NoConn ~ 5650 2950
-NoConn ~ 5650 3150
-NoConn ~ 5650 3250
-NoConn ~ 5650 3450
-NoConn ~ 5650 3550
+NoConn ~ 5550 3050
+NoConn ~ 5550 3150
+NoConn ~ 3950 2750
+NoConn ~ 5550 3350
+NoConn ~ 5550 3450
+NoConn ~ 5550 3550
+NoConn ~ 5550 3750
 $Comp
 L power:GND #PWR03
 U 1 1 59C8E271
-P 7900 3400
-F 0 "#PWR03" H 7900 3150 50  0001 C CNN
-F 1 "GND" H 7900 3250 50  0000 C CNN
-F 2 "" H 7900 3400 50  0001 C CNN
-F 3 "" H 7900 3400 50  0001 C CNN
-	1    7900 3400
+P 6600 4200
+F 0 "#PWR03" H 6600 3950 50  0001 C CNN
+F 1 "GND" H 6600 4050 50  0000 C CNN
+F 2 "" H 6600 4200 50  0001 C CNN
+F 3 "" H 6600 4200 50  0001 C CNN
+	1    6600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR04
 U 1 1 59C8E2BD
-P 7900 2900
-F 0 "#PWR04" H 7900 2750 50  0001 C CNN
-F 1 "VCC" H 7900 3050 50  0000 C CNN
-F 2 "" H 7900 2900 50  0001 C CNN
-F 3 "" H 7900 2900 50  0001 C CNN
-	1    7900 2900
+P 6600 3200
+F 0 "#PWR04" H 6600 3050 50  0001 C CNN
+F 1 "VCC" H 6600 3350 50  0000 C CNN
+F 2 "" H 6600 3200 50  0001 C CNN
+F 3 "" H 6600 3200 50  0001 C CNN
+	1    6600 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 2950 7900 2950
-Wire Wire Line
-	7850 3050 7900 3050
-Wire Wire Line
-	7900 3050 7900 3150
-Wire Wire Line
-	7850 3150 7900 3150
-Connection ~ 7900 3150
-Wire Wire Line
-	7850 3250 7900 3250
-Connection ~ 7900 3250
-Wire Wire Line
-	7900 3350 7850 3350
-Connection ~ 7900 3350
-Wire Wire Line
-	7900 2950 7900 2900
-Wire Wire Line
-	3850 3750 3800 3750
-$Comp
-L power:PWR_FLAG #FLG05
-U 1 1 59C8E603
-P 4750 2250
-F 0 "#FLG05" H 4750 2325 50  0001 C CNN
-F 1 "PWR_FLAG" H 4750 2400 50  0000 C CNN
-F 2 "" H 4750 2250 50  0001 C CNN
-F 3 "" H 4750 2250 50  0001 C CNN
-	1    4750 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 59C8E730
-P 4350 5050
-F 0 "#FLG06" H 4350 5125 50  0001 C CNN
-F 1 "PWR_FLAG" H 4350 5200 50  0000 C CNN
-F 2 "" H 4350 5050 50  0001 C CNN
-F 3 "" H 4350 5050 50  0001 C CNN
-	1    4350 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Specialized:Raspberry_Pi_2_3 J1
-U 1 1 59C8D902
-P 4750 3650
-F 0 "J1" H 5450 2400 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 4350 4550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 5750 4900 50  0001 C CNN
-F 3 "" H 4800 3500 50  0001 C CNN
-	1    4750 3650
-	1    0    0    -1  
-$EndComp
+	3950 4050 3900 4050
 Wire Wire Line
 	4350 4950 4350 5000
 Wire Wire Line
@@ -205,37 +130,17 @@ Wire Wire Line
 	4450 2300 4450 2250
 Wire Wire Line
 	4750 2300 4750 2250
-Text GLabel 7300 3950 0    60   Input ~ 0
-MISO
-Text GLabel 7300 4150 0    60   Input ~ 0
-RST
-Text GLabel 7300 4050 0    60   Input ~ 0
-SCK
-Text GLabel 7900 4050 2    60   Input ~ 0
-MOSI
-Wire Wire Line
-	7900 4050 7850 4050
-Wire Wire Line
-	7350 4050 7300 4050
-Wire Wire Line
-	7300 3950 7350 3950
-Wire Wire Line
-	7300 4150 7350 4150
 $Comp
 L power:VCC #PWR07
 U 1 1 59C909F1
-P 7900 3900
-F 0 "#PWR07" H 7900 3750 50  0001 C CNN
-F 1 "VCC" H 7900 4050 50  0000 C CNN
-F 2 "" H 7900 3900 50  0001 C CNN
-F 3 "" H 7900 3900 50  0001 C CNN
-	1    7900 3900
+P 7900 3200
+F 0 "#PWR07" H 7900 3050 50  0001 C CNN
+F 1 "VCC" H 7900 3350 50  0000 C CNN
+F 2 "" H 7900 3200 50  0001 C CNN
+F 3 "" H 7900 3200 50  0001 C CNN
+	1    7900 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7850 3950 7900 3950
-Wire Wire Line
-	7900 3950 7900 3900
 $Comp
 L power:GND #PWR08
 U 1 1 59C90A6B
@@ -247,38 +152,6 @@ F 3 "" H 7900 4200 50  0001 C CNN
 	1    7900 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 4150 7850 4150
-Wire Wire Line
-	7900 4150 7900 4200
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J3
-U 1 1 59F832CD
-P 7550 4050
-F 0 "J3" H 7600 4250 50  0000 C CNN
-F 1 "ICSP6" H 7600 3850 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Horizontal" H 7550 4050 50  0001 C CNN
-F 3 "" H 7550 4050 50  0001 C CNN
-	1    7550 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J2
-U 1 1 59F83390
-P 7550 3150
-F 0 "J2" H 7600 3450 50  0000 C CNN
-F 1 "ICSP10" H 7600 2850 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" H 7550 3150 50  0001 C CNN
-F 3 "" H 7550 3150 50  0001 C CNN
-	1    7550 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 3150 7900 3250
-Wire Wire Line
-	7900 3250 7900 3350
-Wire Wire Line
-	7900 3350 7900 3400
 Wire Wire Line
 	4950 5000 5050 5000
 Wire Wire Line
@@ -299,4 +172,91 @@ Wire Wire Line
 	4550 2300 4650 2300
 Wire Wire Line
 	4650 2300 4750 2300
+Text Label 7150 3650 0    50   ~ 0
+MOSI
+Text Label 3900 3950 2    50   ~ 0
+MOSI
+Text Label 5600 4350 0    50   ~ 0
+RST
+Text Label 7150 3850 0    50   ~ 0
+RST
+Text Label 7150 3750 0    50   ~ 0
+SCK
+Text Label 7150 3550 0    50   ~ 0
+MISO
+Text Label 3900 4050 2    50   ~ 0
+SCK
+Text Label 3900 3250 2    50   ~ 0
+MISO
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 59C8E730
+P 4350 5050
+F 0 "#FLG06" H 4350 5125 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 5200 50  0000 C CNN
+F 2 "" H 4350 5050 50  0001 C CNN
+F 3 "" H 4350 5050 50  0001 C CNN
+	1    4350 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG05
+U 1 1 59C8E603
+P 4750 2250
+F 0 "#FLG05" H 4750 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4750 2400 50  0000 C CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-10 J2
+U 1 1 5AE0BFA2
+P 6700 3750
+F 0 "J2" H 6700 4150 50  0000 L CNN
+F 1 "AVR-ISP-10" H 6700 3450 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal" V 6450 3800 50  0001 C CNN
+F 3 " ~" H 5425 3200 50  0001 C CNN
+	1    6700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J3
+U 1 1 5AE0C01B
+P 7800 3750
+F 0 "J3" H 7800 4150 50  0000 L CNN
+F 1 "AVR-ISP-6" H 7800 3450 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Horizontal" V 7550 3800 50  0001 C CNN
+F 3 " ~" H 6525 3200 50  0001 C CNN
+	1    7800 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4150 7900 4200
+Wire Wire Line
+	7900 3200 7900 3250
+Wire Wire Line
+	6600 4150 6600 4200
+Wire Wire Line
+	6600 3200 6600 3250
+Wire Wire Line
+	7100 3850 7400 3850
+Wire Wire Line
+	7100 3750 7400 3750
+Wire Wire Line
+	7100 3650 7400 3650
+Wire Wire Line
+	7100 3550 7400 3550
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5AE5283E
+P 4750 3650
+F 0 "J1" H 4050 4900 50  0000 L BNN
+F 1 "Raspberry_Pi_2_3" H 5150 2400 50  0000 L TNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4750 3650 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4750 3650 50  0001 C CNN
+	1    4750 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
